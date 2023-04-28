@@ -1,0 +1,621 @@
+backend:
+  name: git-gateway
+  branch: main
+  accept_roles:
+    - admin
+    - editor
+media_folder: theme/assets/images
+public_folder: /assets/images
+collections:
+  - name: pages
+    label: Pages
+    identifier_field: title
+    extension: md
+    create: false
+    delete: false
+    slug: '{{slug}}'
+    editor:
+      preview: false
+    folder: cms/pages
+    fields:
+      - label: Title
+        name: title
+        widget: string
+      - label: Publish Date
+        name: date
+        widget: datetime
+      - label: Layout
+        widget: hidden
+        name: layout
+        default: '{{slug}}.html'
+      - &ref_0
+        label: Seo
+        name: seo
+        widget: object
+        collapsed: true
+        fields:
+          - label: Title
+            name: title
+            widget: string
+            required: false
+          - label: Description
+            name: description
+            widget: string
+            required: false
+          - label: No index
+            name: noindex
+            widget: boolean
+            default: false
+            required: false
+          - label: Open Graph Title
+            name: og:title
+            widget: string
+            required: false
+          - label: Open Graph Image
+            name: og:image
+            widget: image
+            required: false
+            media_library:
+              config:
+                multiple: false
+          - label: Twitter Title
+            name: twitter:title
+            widget: string
+            default: summary
+            required: false
+          - label: Twitter Card
+            name: twitter:card
+            widget: string
+            default: summary
+            required: false
+          - label: Twitter Site
+            name: twitter:site
+            widget: string
+            required: false
+          - label: Twitter Creator
+            name: twitter:creator
+            widget: string
+            required: false
+          - label: Additional HTML tags
+            name: additional_tags
+            widget: text
+            required: false
+  - name: projet
+    label: Projets
+    folder: cms/projet
+    create: true
+    identifier_field: name
+    extension: md
+    slug: '{{slug}}'
+    fields:
+      - hint: ''
+        name: title
+        label: Name
+        widget: string
+        required: true
+      - hint: ''
+        name: created-on
+        label: Created On
+        widget: datetime
+        required: false
+      - hint: ''
+        name: updated-on
+        label: Updated On
+        widget: datetime
+        required: false
+      - hint: ''
+        name: published-on
+        label: Published On
+        widget: datetime
+        required: false
+      - label: 01 projet info (rich text)
+        name: body
+        widget: markdown
+        required: false
+      - hint: ''
+        name: f_image-phare-du-projet
+        label: Image phare du projet
+        widget: object
+        required: false
+        fields:
+          - hint: ''
+            name: url
+            label: Image
+            widget: image
+            required: false
+            allow_multiple: false
+          - hint: Image Alt
+            name: alt
+            label: alt
+            widget: string
+            required: false
+      - hint: Numéro du projet
+        name: f_numero-2
+        label: Numéro
+        widget: string
+        required: true
+      - hint: Petit paragraph de description du projet
+        name: f_description-du-projet
+        label: Description du projet
+        widget: text
+        required: false
+      - hint: >-
+          Le projet est-il en highlight sur la homepage ? Si oui, activer le
+          switch. Suggestion: max 3 ou 4 projets highlight.
+        name: f_highlight
+        label: Highlight ?
+        widget: boolean
+        required: false
+      - hint: ''
+        name: f_images
+        label: images
+        widget: list
+        required: false
+        fields:
+          - hint: ''
+            name: url
+            label: Image
+            widget: image
+            required: false
+            allow_multiple: false
+          - hint: Image Alt
+            name: alt
+            label: alt
+            widget: string
+            required: false
+      - hint: sélectionner deux autres projets
+        name: f_autres-projets-3
+        label: Autres projets
+        widget: relation
+        required: true
+        collection: projet
+        value_field: cms/projet/{{slug}}.md
+        search_fields:
+          - slug
+          - name
+        display_fields:
+          - title
+        multiple: true
+      - hint: ''
+        name: f_01-projet-titre
+        label: 01 projet titre
+        widget: string
+        required: true
+      - hint: ''
+        name: f_02-projet-titre
+        label: 02 projet titre
+        widget: string
+        required: true
+      - hint: ''
+        name: f_02-projet-info-rich-text
+        label: 02 projet info (rich text)
+        widget: markdown
+        required: true
+      - hint: ''
+        name: f_03-projet-titre
+        label: 03 projet titre
+        widget: string
+        required: true
+      - hint: ''
+        name: f_03-projet-info-rich-text
+        label: 03 projet info (rich text)
+        widget: markdown
+        required: true
+      - label: Tags
+        widget: hidden
+        name: tags
+        default: projet
+      - label: Layout
+        widget: hidden
+        name: layout
+        default: '[projet].html'
+      - label: Publish Date
+        name: date
+        widget: datetime
+      - *ref_0
+  - name: highlight
+    label: Highlights
+    folder: cms/highlight
+    create: true
+    identifier_field: name
+    extension: md
+    slug: '{{slug}}'
+    fields:
+      - hint: ''
+        name: title
+        label: Name
+        widget: string
+        required: true
+      - hint: ''
+        name: created-on
+        label: Created On
+        widget: datetime
+        required: false
+      - hint: ''
+        name: updated-on
+        label: Updated On
+        widget: datetime
+        required: false
+      - hint: ''
+        name: published-on
+        label: Published On
+        widget: datetime
+        required: false
+      - hint: ''
+        name: f_main-image
+        label: main image
+        widget: object
+        required: false
+        fields:
+          - hint: ''
+            name: url
+            label: Image
+            widget: image
+            required: false
+            allow_multiple: false
+          - hint: Image Alt
+            name: alt
+            label: alt
+            widget: string
+            required: false
+      - hint: Ne pas modifier SVP
+        name: f_number
+        label: number
+        widget: string
+        required: false
+      - hint: ''
+        name: f_title
+        label: title
+        widget: string
+        required: false
+      - hint: ''
+        name: f_description
+        label: description
+        widget: text
+        required: false
+      - label: Tags
+        widget: hidden
+        name: tags
+        default: highlight
+      - label: Layout
+        widget: hidden
+        name: layout
+        default: '[highlight].html'
+      - label: Publish Date
+        name: date
+        widget: datetime
+      - *ref_0
+  - label: Theme Settings
+    name: settings
+    identifier_field: title
+    extension: json
+    create: false
+    delete: false
+    slug: '{{slug}}'
+    editor:
+      preview: false
+    files:
+      - label: General
+        name: site
+        file: cms/_data/settings/site.json
+        fields:
+          - label: Title
+            name: title
+            widget: hidden
+            default: General
+          - hint: Full domain url (needed for a correct sitemap file)
+            name: domain
+            label: Domain
+            widget: string
+            required: false
+          - name: favicon
+            label: Favicon
+            widget: image
+            allow_multiple: false
+            required: false
+          - name: apple_touch_icon
+            label: Apple Touch Icon
+            widget: image
+            allow_multiple: false
+            required: false
+          - name: header_additional_content
+            label: Additional Content Header
+            hint: Content here will be placed before </head> tag
+            widget: text
+            required: false
+          - name: footer_additional_content
+            label: Additional Content Footer
+            hint: Content here will be placed before </body> tag
+            widget: text
+            required: false
+          - name: images_optimization
+            label: Images Optimization
+            widget: object
+            collapsed: false
+            fields:
+              - label: Image Formats
+                name: formats
+                widget: select
+                multiple: true
+                options:
+                  - label: Avif
+                    value: avif
+                  - label: Webp
+                    value: webp
+              - label: Image Dimensions
+                name: dimensions
+                widget: select
+                multiple: true
+                options:
+                  - label: '500'
+                    value: 500
+                  - label: '800'
+                    value: 800
+                  - label: '1080'
+                    value: 1080
+                  - label: '1600'
+                    value: 1600
+                  - label: '2000'
+                    value: 2000
+                  - label: '2600'
+                    value: 2600
+      - label: Colors
+        name: colors
+        file: cms/_data/colors.json
+        fields:
+          - label: Title
+            name: title
+            widget: hidden
+            default: Colors
+      - label: Texts
+        name: texts
+        file: cms/_data/texts.json
+        fields:
+          - label: Title
+            name: title
+            widget: hidden
+            default: Texts
+          - hint: 'Original text: glisser, key: 6eae131'
+            label: Text
+            name: 6eae131
+            widget: string
+          - hint: 'Original text: Projets, key: 50c8e507'
+            label: Text
+            name: 50c8e507
+            widget: string
+          - hint: 'Original text: Contact, key: -64104400'
+            label: Text
+            name: '-64104400'
+            widget: string
+          - hint: 'Original text: Acceuil, key: 1d0795b4'
+            label: Text
+            name: 1d0795b4
+            widget: string
+          - hint: 'Original text: À propos, key: 4b4273e7'
+            label: Text
+            name: 4b4273e7
+            widget: string
+          - hint: 'Original text: celine@espasyo.ch, key: -40192f4d'
+            label: Text
+            name: '-40192f4d'
+            widget: string
+          - hint: 'Original text: +41 79 517 96 40, key: -4d429f6c'
+            label: Text
+            name: '-4d429f6c'
+            widget: string
+          - hint: >-
+              Original text: Une approche plus intuitive et logique de la
+              construction, key: 6515d33d
+            label: Text
+            name: 6515d33d
+            widget: string
+          - hint: 'Original text: No items found., key: 3d503d2b'
+            label: Text
+            name: 3d503d2b
+            widget: string
+          - hint: 'Original text: Sélection de nos récents travaux, key: -1e9c7ab0'
+            label: Text
+            name: '-1e9c7ab0'
+            widget: string
+          - hint: >-
+              Original text: " L’autonomie et la valorisation des ressources
+              locales sont deux principes centraux de notre vision de la
+              construction et de l’espace. Parce que tout ce qui provient d’une
+              démolition ne doit pas forcément être jeté, nous essayons de
+              réutiliser certains matériaux autant que possible. ", key:
+              2f481b2a
+            label: Text
+            name: 2f481b2a
+            widget: text
+          - hint: 'Original text: Projects, key: -37ac8366'
+            label: Text
+            name: '-37ac8366'
+            widget: string
+          - hint: 'Original text: © 2023 espasyo.ch, key: 57f295d3'
+            label: Text
+            name: 57f295d3
+            widget: string
+          - hint: 'Original text: dev ❤️ , key: 5d889fca'
+            label: Text
+            name: 5d889fca
+            widget: string
+          - hint: 'Original text: anthonysalamin.ch, key: -67104443'
+            label: Text
+            name: '-67104443'
+            widget: string
+          - hint: 'Original text: Sélectionde nos récents travaux, key: -6b948300'
+            label: Text
+            name: '-6b948300'
+            widget: string
+          - hint: >-
+              Original text: Les sécheresses à répétition ont mis en lumière la
+              raréfaction des ressources d’eau. L’installation de toilettes
+              sèches et de cuves de récupération des eaux de pluie sont les
+              solutions qu’Espasyo apporte à ces préoccupations
+              environnementales. Ensemble ou séparément, elles constituent un
+              système ingénieux pour une utilisation optimale et autonome de
+              l’eau d’un ménage., key: 2ec05f38
+            label: Text
+            name: 2ec05f38
+            widget: text
+          - hint: 'Original text: Mieux gérer, key: -38f9697'
+            label: Text
+            name: '-38f9697'
+            widget: string
+          - hint: 'Original text: l''eau, key: 6052c3e'
+            label: Text
+            name: 6052c3e
+            widget: string
+          - hint: 'Original text: Le calme de la végétation, key: -1b57515d'
+            label: Text
+            name: '-1b57515d'
+            widget: string
+          - hint: >-
+              Original text: La nature a sa carte à jouer dans le confort de
+              vie. En plus de réduire les températures maximales lors de fortes
+              chaleurs, les toitures végétalisées permettent de réguler le
+              ruissellement des eaux et de rafraîchir naturellement
+              l’environnement. Pour trouver l’équilibre idéal entre le vert et
+              le bâti, nous travaillons main dans la main avec des spécialistes
+              de la flore et de la biodiversité, dont les créations végétales
+              transforment une construction en havre de paix., key: -7df87d6d
+            label: Text
+            name: '-7df87d6d'
+            widget: text
+          - hint: 'Original text: 01, key: 601'
+            label: Text
+            name: '601'
+            widget: string
+          - hint: 'Original text: 02, key: 602'
+            label: Text
+            name: '602'
+            widget: string
+          - hint: 'Original text: 03, key: 603'
+            label: Text
+            name: '603'
+            widget: string
+          - hint: 'Original text: La gallerie, key: -1e76c072'
+            label: Text
+            name: '-1e76c072'
+            widget: string
+          - hint: 'Original text: photos, key: -3af3777f'
+            label: Text
+            name: '-3af3777f'
+            widget: string
+          - hint: 'Original text: Autres projets, key: af61b07'
+            label: Text
+            name: af61b07
+            widget: string
+          - hint: 'Original text: en construction 🌱, key: -15803153'
+            label: Text
+            name: '-15803153'
+            widget: string
+      - label: Links
+        name: links
+        file: cms/_data/links.json
+        fields:
+          - label: Title
+            name: title
+            widget: hidden
+            default: Links
+          - hint: 'Original link: /, key: 2f'
+            label: Link
+            name: 2f
+            widget: string
+          - hint: 'Original link: #, key: 23'
+            label: Link
+            name: '23'
+            widget: string
+          - hint: 'Original link: /projets, key: -1875e8'
+            label: Link
+            name: '-1875e8'
+            widget: string
+          - hint: 'Original link: /a-propos, key: -590bcf5e'
+            label: Link
+            name: '-590bcf5e'
+            widget: string
+          - hint: >-
+              Original link: mailto:celine@espasyo.ch?subject=Contact, key:
+              -718db025
+            label: Link
+            name: '-718db025'
+            widget: string
+          - hint: 'Original link: tel:0041795179640, key: 10f92bd6'
+            label: Link
+            name: 10f92bd6
+            widget: string
+          - hint: >-
+              Original link: mailto:celine@espasyo.ch?subject=espasyo, key:
+              -64129cdb
+            label: Link
+            name: '-64129cdb'
+            widget: string
+          - hint: 'Original link: tel:+41795179640, key: -717bed17'
+            label: Link
+            name: '-717bed17'
+            widget: string
+          - hint: 'Original link: https://www.anthonysalamin.ch/, key: 64a1e758'
+            label: Link
+            name: 64a1e758
+            widget: string
+      - label: Images
+        name: images
+        file: cms/_data/images.json
+        fields:
+          - label: Title
+            name: title
+            widget: hidden
+            default: Images
+          - label: Image
+            name: '-7a88968b'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: 54ee7ec
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: '-15470899'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: 2600fe99
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+publish_mode: editorial_workflow
