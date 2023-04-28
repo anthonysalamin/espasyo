@@ -1,6 +1,5 @@
 backend:
   name: git-gateway
-  branch: main
   accept_roles:
     - admin
     - editor
@@ -522,13 +521,13 @@ collections:
             label: Link
             name: 2f
             widget: string
-          - hint: 'Original link: #, key: 23'
-            label: Link
-            name: '23'
-            widget: string
           - hint: 'Original link: /projets, key: -1875e8'
             label: Link
             name: '-1875e8'
+            widget: string
+          - hint: 'Original link: #footer, key: -10273082'
+            label: Link
+            name: '-10273082'
             widget: string
           - hint: 'Original link: /a-propos, key: -590bcf5e'
             label: Link
@@ -557,6 +556,10 @@ collections:
           - hint: 'Original link: https://www.anthonysalamin.ch/, key: 64a1e758'
             label: Link
             name: 64a1e758
+            widget: string
+          - hint: 'Original link: #, key: 23'
+            label: Link
+            name: '23'
             widget: string
       - label: Images
         name: images

@@ -165,8 +165,8 @@ a:focus,button:focus,input:focus,textarea:focus{outline:0!important}a{-webkit-to
         <div class="nav-wrap-desktop">
           <a href="{{ links.2f }}" class="wrap-block-logo w-inline-block"><img src="{{ images.-7a88968b.url }}" loading="lazy" alt="{{ images.-7a88968b.alt | trim | escape }}" class="image"></a>
           <div class="wrap-nav-links">
-            <a href="{{ links.23 }}" class="nav-link dark">{{ texts.50c8e507 }}</a>
-            <a href="{{ links.23 }}" class="nav-link last dark">{{ texts.-64104400 }}</a>
+            <a href="{{ links.-1875e8 }}" class="nav-link dark">{{ texts.50c8e507 }}</a>
+            <a href="{{ links.-10273082 }}" class="nav-link last dark">{{ texts.-64104400 }}</a>
           </div>
         </div>
         <div class="nav-wrap-mobile">
@@ -277,7 +277,7 @@ a:focus,button:focus,input:focus,textarea:focus{outline:0!important}a{-webkit-to
       {%- assign setItems = f_images -%}<div class="collection-list-wrapper-slider w-dyn-list">
         {%- unless setItems.length == 0 -%}<div role="list" class="images w-dyn-items">
           {%- for setItem in setItems -%}<div role="listitem" class="image-wrap w-dyn-item">
-            <a href="{{ links.23 }}" id="lightbox-project" class="lightbox-link w-inline-block w-lightbox"><img src="{{ setItem.url }}" loading="lazy" data-sizes="[{&quot;max&quot;:10000,&quot;size&quot;:&quot;100vw&quot;}]" alt="{{ setItem.alt }}">
+            <a href="{{ links.23 }}" id="lightbox-project" class="lightbox-link w-inline-block w-lightbox"><img loading="lazy" data-sizes="[{&quot;max&quot;:10000,&quot;size&quot;:&quot;100vw&quot;}]" src="{{ setItem.url }}" alt="{{ setItem.alt }}">
               <script type="application/json" class="w-json">{"items":[{"type":"image","url":"{{ setItem.url }}","caption":""}],"group":"images"}</script>
             </a><img loading="lazy" data-sizes="[{&quot;max&quot;:767,&quot;size&quot;:&quot;87vw&quot;},{&quot;max&quot;:1439,&quot;size&quot;:&quot;84vw&quot;},{&quot;max&quot;:10000,&quot;size&quot;:&quot;1200px&quot;}]" src="{{ setItem.url }}" alt="{{ setItem.alt }}" class="img test">
           </div>{%- endfor -%}
@@ -288,7 +288,7 @@ a:focus,button:focus,input:focus,textarea:focus{outline:0!important}a{-webkit-to
       <template><div class="collection-list-wrapper-slider w-dyn-list">
         <div role="list" class="images w-dyn-items">
           <div role="listitem" class="image-wrap w-dyn-item">
-            <a href="{# links.23 #}" id="lightbox-project" class="lightbox-link w-inline-block w-lightbox"><img src="{# setItem.url #}" loading="lazy" data-sizes="[{&quot;max&quot;:10000,&quot;size&quot;:&quot;100vw&quot;}]" alt="{# setItem.alt #}">
+            <a href="{# links.23 #}" id="lightbox-project" class="lightbox-link w-inline-block w-lightbox"><img loading="lazy" data-sizes="[{&quot;max&quot;:10000,&quot;size&quot;:&quot;100vw&quot;}]" src="{# setItem.url #}" alt="{# setItem.alt #}">
               <script type="application/json" class="w-json">{"items":[{"type":"image","url":"{# setItem.url #}","caption":""}],"group":"images"}</script>
             </a><img loading="lazy" data-sizes="[{&quot;max&quot;:767,&quot;size&quot;:&quot;87vw&quot;},{&quot;max&quot;:1439,&quot;size&quot;:&quot;84vw&quot;},{&quot;max&quot;:10000,&quot;size&quot;:&quot;1200px&quot;}]" src="{# setItem.url #}" alt="{# setItem.alt #}" class="img test">
           </div>
@@ -321,7 +321,7 @@ a:focus,button:focus,input:focus,textarea:focus{outline:0!important}a{-webkit-to
       {%- assign projetOfProjet = f_autres-projets-3 | resolveMultiReferences | limit: 2 -%}<div class="collection-list-wrapper-similar-projets w-dyn-list">
         {%- unless projetOfProjet.length == 0 -%}<div role="list" class="collection-list-2 w-dyn-items">
           {%- for item in projetOfProjet -%}<div role="listitem" class="w-dyn-item">
-            <a href="{{ item.url }}" class="wrap-im-other-project w-inline-block"><img loading="lazy" data-sizes="[{&quot;max&quot;:767,&quot;size&quot;:&quot;42vw&quot;},{&quot;max&quot;:1439,&quot;size&quot;:&quot;41vw&quot;},{&quot;max&quot;:10000,&quot;size&quot;:&quot;592px&quot;}]" src="{{ item.data.f_image-phare-du-projet.url }}" alt="{{ item.data.title }}" class="thumbnail"></a>
+            <a href="{{ item.url }}" class="wrap-im-other-project w-inline-block"><img loading="lazy" data-sizes="[{&quot;max&quot;:10000,&quot;size&quot;:&quot;100vw&quot;}]" src="{{ item.data.f_image-phare-du-projet.url }}" alt="{{ item.data.title }}" class="thumbnail"></a>
           </div>{%- endfor -%}
         </div>{%- endunless -%}
         {%- if projetOfProjet.length == 0 -%}<div class="w-dyn-empty">
@@ -330,7 +330,7 @@ a:focus,button:focus,input:focus,textarea:focus{outline:0!important}a{-webkit-to
       </div>
     </div>
   </div>
-  <div class="section footer wf-section">
+  <div id="footer" class="section footer wf-section">
     <div class="container direction-vertical-align-center">
       <div class="div-block">
         <p class="subline footer">{{ texts.2f481b2a }}</p>
