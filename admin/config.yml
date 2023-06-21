@@ -112,7 +112,9 @@ collections:
         name: body
         widget: markdown
         required: false
-      - hint: ''
+      - hint: >-
+          L'image phare du projet doit avoir le ratio 4:3 et peser moins de
+          200Ko
         name: f_image-phare-du-projet
         label: Image phare du projet
         widget: object
@@ -146,7 +148,9 @@ collections:
         label: Highlight ?
         widget: boolean
         required: false
-      - hint: ''
+      - hint: >-
+          Les images doivent avoir le ratiio 4:3 au format JPG est peser moins
+          de 200Ko
         name: f_images
         label: images
         widget: list
@@ -241,7 +245,7 @@ collections:
         label: Published On
         widget: datetime
         required: false
-      - hint: ''
+      - hint: L'image du highlight doit peser moins de 200ko au format JPG
         name: f_main-image
         label: main image
         widget: object
@@ -435,14 +439,6 @@ collections:
             label: Text
             name: 57f295d3
             widget: string
-          - hint: 'Original text: dev ❤️ , key: 5d889fca'
-            label: Text
-            name: 5d889fca
-            widget: string
-          - hint: 'Original text: anthonysalamin.ch, key: -67104443'
-            label: Text
-            name: '-67104443'
-            widget: string
           - hint: 'Original text: Sélectionde nos récents travaux, key: -6b948300'
             label: Text
             name: '-6b948300'
@@ -553,10 +549,6 @@ collections:
           - hint: 'Original link: tel:+41795179640, key: -717bed17'
             label: Link
             name: '-717bed17'
-            widget: string
-          - hint: 'Original link: https://www.anthonysalamin.ch/, key: 64a1e758'
-            label: Link
-            name: 64a1e758
             widget: string
           - hint: 'Original link: #, key: 23'
             label: Link

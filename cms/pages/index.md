@@ -6,7 +6,7 @@ slug: ''
 tags: pages
 seo:
   noindex: false
-  title: Espasyo - buro d'architecture valaisan.
+  title: Espasyo - Architecture, Construction en paille, Rénovation
   description: >-
     Une approche plus intuitive et logique de la construction. Espasyo mise sur
     des stratégies low-tech et peu énergivores pour allier sobriété et
@@ -17,7 +17,7 @@ seo:
     technologies surabondantes. Combinés à l’utilisation dénergie solaire pour
     la production d’eau chaude sanitaire et de chauffage, ces choix révèlent
     leur plein potentiel.
-  og:title: Espasyo - buro d'architecture valaisan.
+  og:title: Espasyo - Architecture, Construction en paille, Rénovation
   additional_tags: >-
     <meta content="Une approche plus intuitive et logique de la construction.
     Espasyo mise sur des stratégies low-tech et peu énergivores pour allier
@@ -41,7 +41,7 @@ seo:
     property="twitter:image"><meta property="og:type" content="website">
   og:image: >-
     https://uploads-ssl.webflow.com/6411ac7715f8d413325735be/644ba0d0cbe59b84cb347b1e_espasyo-opengraph.jpg
-  twitter:title: Espasyo - buro d'architecture valaisan.
+  twitter:title: Espasyo - Architecture, Construction en paille, Rénovation
 ---
 
 

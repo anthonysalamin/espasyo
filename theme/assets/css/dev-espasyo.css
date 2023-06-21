@@ -329,7 +329,7 @@
 }
 
 .box {
-  flex-direction: column;
+  flex-direction: row;
   align-items: flex-start;
   display: flex;
 }
@@ -689,6 +689,15 @@
   .footer-contact {
     font-size: 2.6rem;
     line-height: 3.4rem;
+  }
+
+  .footer-wrap {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-link {
+    margin-top: 14px;
   }
 
   .grid {
