@@ -1,9 +1,9 @@
 backend:
   name: git-gateway
-  branch: main
   accept_roles:
     - admin
     - editor
+  branch: main
 media_folder: theme/assets/images
 public_folder: /assets/images
 collections:
@@ -80,6 +80,50 @@ collections:
             name: additional_tags
             widget: text
             required: false
+  - name: legal
+    label: Légals
+    folder: cms/legal
+    create: true
+    identifier_field: name
+    extension: md
+    slug: '{{slug}}'
+    fields:
+      - hint: ''
+        name: title
+        label: Name
+        widget: string
+        required: true
+      - hint: ''
+        name: created-on
+        label: Created On
+        widget: datetime
+        required: false
+      - hint: ''
+        name: updated-on
+        label: Updated On
+        widget: datetime
+        required: false
+      - hint: ''
+        name: published-on
+        label: Published On
+        widget: datetime
+        required: false
+      - label: Rich text
+        name: body
+        widget: markdown
+        required: false
+      - label: Tags
+        widget: hidden
+        name: tags
+        default: legal
+      - label: Layout
+        widget: hidden
+        name: layout
+        default: '[legal].html'
+      - label: Publish Date
+        name: date
+        widget: datetime
+      - *ref_0
   - name: projet
     label: Projets
     folder: cms/projet
@@ -148,6 +192,7 @@ collections:
         label: Highlight ?
         widget: boolean
         required: false
+        default: false
       - hint: >-
           Les images doivent avoir le ratiio 4:3 au format JPG est peser moins
           de 200Ko
@@ -379,6 +424,140 @@ collections:
             name: title
             widget: hidden
             default: Texts
+          - hint: 'Original text: En cliquant sur , key: -5767796a'
+            label: Text
+            name: '-5767796a'
+            widget: string
+          - hint: 'Original text: "Accepter", key: 6af87d0b'
+            label: Text
+            name: 6af87d0b
+            widget: string
+          - hint: >-
+              Original text: , vous acceptez que tous les cookies soient stockés
+              sur votre appareil afin d'améliorer la navigation sur le site.
+              Consultez notre , key: 3276fd0
+            label: Text
+            name: 3276fd0
+            widget: text
+          - hint: 'Original text: politique de confidentialité, key: 6ad7d527'
+            label: Text
+            name: 6ad7d527
+            widget: string
+          - hint: 'Original text:  pour plus d''informations., key: 1442d302'
+            label: Text
+            name: 1442d302
+            widget: string
+          - hint: 'Original text: Préférences, key: -6bfbaf20'
+            label: Text
+            name: '-6bfbaf20'
+            widget: string
+          - hint: 'Original text: Refuser, key: -5c134542'
+            label: Text
+            name: '-5c134542'
+            widget: string
+          - hint: 'Original text: Accepter, key: -7c16fc2b'
+            label: Text
+            name: '-7c16fc2b'
+            widget: string
+          - hint: >-
+              Original text: Centre de préférences pour la politique de
+              protection de la vie privée, key: 2dc7a23e
+            label: Text
+            name: 2dc7a23e
+            widget: string
+          - hint: >-
+              Original text: Lorsque vous visitez des sites web, ceux-ci peuvent
+              stocker ou récupérer des données dans votre navigateur. Ce
+              stockage est souvent nécessaire pour la fonctionnalité de base du
+              site web. Il peut être utilisé à des fins de marketing, d'analyse
+              et de personnalisation du site, par exemple pour enregistrer vos
+              préférences. La protection de la vie privée est importante pour
+              nous, c'est pourquoi vous avez la possibilité de désactiver
+              certains types de stockage qui ne sont pas nécessaires au
+              fonctionnement de base du site web. Le blocage de certaines
+              catégories peut avoir un impact sur votre expérience du site web.,
+              key: 5719b980
+            label: Text
+            name: 5719b980
+            widget: text
+          - hint: 'Original text: Rejeter tous les cookies, key: -1bb35ed1'
+            label: Text
+            name: '-1bb35ed1'
+            widget: string
+          - hint: 'Original text: Accepter tous les cookies, key: -79c29fd3'
+            label: Text
+            name: '-79c29fd3'
+            widget: string
+          - hint: >-
+              Original text: Gérer les préférences en matière de consentement
+              par catégorie, key: 351868e0
+            label: Text
+            name: '351868e0'
+            widget: string
+          - hint: 'Original text: Essentiel, key: 16a393aa'
+            label: Text
+            name: 16a393aa
+            widget: string
+          - hint: 'Original text: Toujours actif, key: -5c954f1a'
+            label: Text
+            name: '-5c954f1a'
+            widget: string
+          - hint: >-
+              Original text: Ces éléments sont nécessaires pour permettre le
+              fonctionnement de base du site web., key: -7b9165df
+            label: Text
+            name: '-7b9165df'
+            widget: string
+          - hint: 'Original text: Marketing (aucun), key: 5a1ef9af'
+            label: Text
+            name: 5a1ef9af
+            widget: string
+          - hint: 'Original text: Essential, key: 16a3932e'
+            label: Text
+            name: 16a3932e
+            widget: string
+          - hint: >-
+              Original text: Ces éléments sont utilisés pour diffuser des
+              publicités plus pertinentes pour vous et vos centres d'intérêt.
+              Ils peuvent également être utilisés pour limiter le nombre de fois
+              que vous voyez une publicité et mesurer l'efficacité des campagnes
+              publicitaires. Les réseaux publicitaires les placent généralement
+              avec l'autorisation de l'exploitant du site web., key: -7979fb1e
+            label: Text
+            name: '-7979fb1e'
+            widget: text
+          - hint: 'Original text: Personnalisation, key: 6fc5ea07'
+            label: Text
+            name: 6fc5ea07
+            widget: string
+          - hint: >-
+              Original text: Ces éléments permettent au site web de se souvenir
+              des choix que vous faites (tels que votre nom d'utilisateur, votre
+              langue ou la région dans laquelle vous vous trouvez) et de fournir
+              des fonctions améliorées et plus personnelles. Par exemple, un
+              site web peut vous fournir des bulletins météorologiques locaux ou
+              des informations sur la circulation en stockant des données sur
+              votre position actuelle., key: -1d143c52
+            label: Text
+            name: '-1d143c52'
+            widget: text
+          - hint: 'Original text: Analyse (aucun), key: 4f466fc'
+            label: Text
+            name: 4f466fc
+            widget: string
+          - hint: >-
+              Original text: Ces éléments aident l'opérateur du site web à
+              comprendre comment son site fonctionne, comment les visiteurs
+              interagissent avec le site et s'il y a des problèmes techniques.
+              Ce type de stockage ne recueille généralement pas d'informations
+              permettant d'identifier un visiteur., key: -46635a4
+            label: Text
+            name: '-46635a4'
+            widget: text
+          - hint: 'Original text: Confirmer mes préférences et fermer, key: -c5b78c0'
+            label: Text
+            name: '-c5b78c0'
+            widget: string
           - hint: 'Original text: glisser, key: 6eae131'
             label: Text
             name: 6eae131
@@ -514,21 +693,29 @@ collections:
             name: title
             widget: hidden
             default: Links
+          - hint: 'Original link: /politique-de-confidentialite/, key: -14519503'
+            label: Link
+            name: '-14519503'
+            widget: string
+          - hint: 'Original link: #, key: 23'
+            label: Link
+            name: '23'
+            widget: string
           - hint: 'Original link: /, key: 2f'
             label: Link
             name: 2f
             widget: string
-          - hint: 'Original link: /projets, key: -1875e8'
+          - hint: 'Original link: /projets/, key: -2f646e9'
             label: Link
-            name: '-1875e8'
+            name: '-2f646e9'
             widget: string
           - hint: 'Original link: #footer, key: -10273082'
             label: Link
             name: '-10273082'
             widget: string
-          - hint: 'Original link: /a-propos, key: -590bcf5e'
+          - hint: 'Original link: /a-propos/, key: 3791e3cd'
             label: Link
-            name: '-590bcf5e'
+            name: 3791e3cd
             widget: string
           - hint: >-
               Original link: mailto:celine@espasyo.ch?subject=Contact, key:
@@ -549,10 +736,6 @@ collections:
           - hint: 'Original link: tel:+41795179640, key: -717bed17'
             label: Link
             name: '-717bed17'
-            widget: string
-          - hint: 'Original link: #, key: 23'
-            label: Link
-            name: '23'
             widget: string
       - label: Images
         name: images
