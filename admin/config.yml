@@ -157,8 +157,8 @@ collections:
         widget: markdown
         required: false
       - hint: >-
-          L'image phare du projet doit avoir le ratio 4:3 et peser moins de
-          200Ko
+          L'image phare du projet doit avoir le ratio 4:3 (horizontal) et peser
+          moins de 200Ko
         name: f_image-phare-du-projet
         label: Image phare du projet
         widget: object
@@ -194,8 +194,8 @@ collections:
         required: false
         default: false
       - hint: >-
-          Les images doivent avoir le ratiio 4:3 au format JPG est peser moins
-          de 200Ko
+          Les images doivent avoir le ratiio 4:3 (horizontal, pas
+          portrait/vertical) au format JPG est peser moins de 200Ko
         name: f_images
         label: images
         widget: list
@@ -617,6 +617,10 @@ collections:
           - hint: 'Original text: © 2023 espasyo.ch, key: 57f295d3'
             label: Text
             name: 57f295d3
+            widget: string
+          - hint: 'Original text: coming soon, key: -568ea4c6'
+            label: Text
+            name: '-568ea4c6'
             widget: string
           - hint: 'Original text: Sélectionde nos récents travaux, key: -6b948300'
             label: Text

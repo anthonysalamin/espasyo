@@ -23,14 +23,14 @@ f_images:
     alt: null
 f_image-phare-du-projet:
   url: >-
-    https://uploads-ssl.webflow.com/6411b33a83bdc1e072b34811/6447d1ffe21e95c0ccdae4d6_chalet-germanier-bjpg.jpg
+    https://uploads-ssl.webflow.com/6411b33a83bdc1e072b34811/6447d5e0c5521456e8d6dd35_DSC_1393.jpg
   alt: null
 f_autres-projets-3:
   - cms/projet/maison-bianco.md
   - cms/projet/maison-la-koutou.md
-updated-on: '2023-04-28T09:55:30.184Z'
+updated-on: '2023-08-04T12:29:18.450Z'
 created-on: '2023-04-25T13:30:36.562Z'
-published-on: '2023-04-28T09:57:16.307Z'
+published-on: '2023-08-04T12:29:28.686Z'
 f_02-projet-info-rich-text: >-
   Solaire thermique pour eau chaude sanitaire et chauffage, appoint poêle hydrau
   à bûches et toilettes sèches à compostage
