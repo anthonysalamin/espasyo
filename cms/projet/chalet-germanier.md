@@ -1,15 +1,17 @@
 ---
 f_highlight: false
-f_numero-2: '07'
+f_numero-2: '03'
 title: Chalet Germanier
 f_description-du-projet: >-
-  Description d'un petit paragraphe de l'image. Lorem ipsum dolor sit amet,
-  consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-  dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-  ullamco laboris nisi ut aliquip ex ea commodo consequat.
-f_03-projet-titre: Autoconstruction
-f_02-projet-titre: Concept énergétique
-f_01-projet-titre: Construction
+  Ce chalet traditionnel des années ’80, en maçonnerie et madrier, a été
+  enveloppé thermiquement afin d’y séjourner été comme hiver. Le choix s’est
+  porté sur une isolation en fibre de bois, tant en façade qu’en toiture. Pour
+  le parquet, la cuisine et le bardage horizontal, nous avons opté pour du
+  mélèze. Des panneaux alu imitant la pierre se posent légèrement en toiture,
+  permettant la conservation de la charpente existante.
+f_03-projet-titre: Rénovation
+f_02-projet-titre: Concept énergétique, CECB A-A
+f_01-projet-titre: Rénovation
 slug: chalet-germanier
 f_image-phare-du-projet:
   url: >-
@@ -25,16 +27,20 @@ f_images:
 f_autres-projets-3:
   - cms/projet/maison-bianco.md
   - cms/projet/maison-la-koutou.md
-updated-on: '2023-04-28T09:55:22.745Z'
+updated-on: '2023-09-21T11:49:47.182Z'
 created-on: '2023-04-25T13:14:08.217Z'
-published-on: '2023-04-28T09:57:16.307Z'
-f_02-projet-info-rich-text: >-
-  Solaire thermique pour eau chaude sanitaire et chauffage, appoint poêle hydrau
-  à bûches et toilettes sèches à compostage
-f_03-projet-info-rich-text: Autoconstruction en petites bottes de paille de la région
+published-on: '2023-09-21T11:54:49.113Z'
+f_02-projet-info-rich-text: |-
+  Solaire thermique pour eau chaude sanitaire et chauffage  
+  Appoint poêle hydrau à pellets
+
+  ‍
+f_03-projet-info-rich-text: >-
+  Rénovation complète du chalet en conservant la lecture des parties maçonnerie
+  et madrier. Argile sur maçonnerie intérieure.
 layout: '[projet].html'
 tags: projet
 ---
 
 Savièse  
-2016
+2019

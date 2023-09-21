@@ -1,14 +1,17 @@
 ---
 f_highlight: false
-f_numero-2: '05'
+f_numero-2: '06'
 title: Maison Kimeric
 f_description-du-projet: >-
-  Description d'un petit paragraphe de l'image. Lorem ipsum dolor sit amet,
-  consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-  dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-  ullamco laboris nisi ut aliquip ex ea commodo consequat.
-f_03-projet-titre: Autoconstruction
-f_02-projet-titre: Concept énergétique
+  Dès le départ, le maître d’ouvrage avait une forte envie de tendre vers
+  l’autonomie énergétique, et ce malgré la proximité de la forêt qui diminue
+  fortement l’ensoleillement hivernal. Résultat : une construction en modules
+  préfabriqués de paille porteuse, isolée au maximum, avec une production de
+  chaleur grâce au solaire thermique et du photovoltaïque pour le reste des
+  besoins quotidiens. Des toilettes à compostage ainsi qu’une cuve de
+  récupération d’eau de pluie complètent le projet.
+f_03-projet-titre: Construction
+f_02-projet-titre: Concept énergétique, CECB A-A
 f_01-projet-titre: Construction
 slug: maison-kimeric
 f_images:
@@ -28,16 +31,25 @@ f_image-phare-du-projet:
 f_autres-projets-3:
   - cms/projet/maison-bianco.md
   - cms/projet/maison-la-koutou.md
-updated-on: '2023-08-04T12:29:18.450Z'
+updated-on: '2023-09-21T11:53:36.235Z'
 created-on: '2023-04-25T13:30:36.562Z'
-published-on: '2023-08-04T12:29:28.686Z'
-f_02-projet-info-rich-text: >-
-  Solaire thermique pour eau chaude sanitaire et chauffage, appoint poêle hydrau
-  à bûches et toilettes sèches à compostage
-f_03-projet-info-rich-text: Autoconstruction en petites bottes de paille de la région
+published-on: '2023-09-21T11:54:49.113Z'
+f_02-projet-info-rich-text: |-
+  Solaire thermique pour eau chaude sanitaire et chauffage  
+  Appoint poêle hydrau à bûches  
+  Solaire photovoltaïque  
+  Cuve 5’000l récupération eaux pluie  
+  Toilettes sèches à compostage
+
+  ‍
+f_03-projet-info-rich-text: >-
+  Construction en paille avec le système préfabriqué Ecococon. L’extérieur
+  s’apparente à un chalet traditionnel avec son bardage mélèze
 layout: '[projet].html'
 tags: projet
 ---
 
-Savièse  
-2016
+Arbaz  
+2022
+
+‍

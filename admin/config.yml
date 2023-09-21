@@ -424,6 +424,10 @@ collections:
             name: title
             widget: hidden
             default: Texts
+          - hint: 'Original text: coming soon, key: -568ea4c6'
+            label: Text
+            name: '-568ea4c6'
+            widget: string
           - hint: 'Original text: En cliquant sur , key: -5767796a'
             label: Text
             name: '-5767796a'
@@ -596,9 +600,13 @@ collections:
             label: Text
             name: 3d503d2b
             widget: string
-          - hint: 'Original text: Sélection de nos récents travaux, key: -1e9c7ab0'
+          - hint: 'Original text: Un aperçu de, key: 602b4d30'
             label: Text
-            name: '-1e9c7ab0'
+            name: 602b4d30
+            widget: string
+          - hint: 'Original text: nos réalisations, key: 42a9fb78'
+            label: Text
+            name: 42a9fb78
             widget: string
           - hint: >-
               Original text: " L’autonomie et la valorisation des ressources
@@ -617,10 +625,6 @@ collections:
           - hint: 'Original text: © 2023 espasyo.ch, key: 57f295d3'
             label: Text
             name: 57f295d3
-            widget: string
-          - hint: 'Original text: coming soon, key: -568ea4c6'
-            label: Text
-            name: '-568ea4c6'
             widget: string
           - hint: 'Original text: Sélectionde nos récents travaux, key: -6b948300'
             label: Text
@@ -673,17 +677,17 @@ collections:
             label: Text
             name: '603'
             widget: string
-          - hint: 'Original text: La gallerie, key: -1e76c072'
+          - hint: 'Original text: Galerie photos, key: -83ac7fa'
             label: Text
-            name: '-1e76c072'
-            widget: string
-          - hint: 'Original text: photos, key: -3af3777f'
-            label: Text
-            name: '-3af3777f'
+            name: '-83ac7fa'
             widget: string
           - hint: 'Original text: Autres projets, key: af61b07'
             label: Text
             name: af61b07
+            widget: string
+          - hint: 'Original text: Sélection de nos récents travaux, key: -1e9c7ab0'
+            label: Text
+            name: '-1e9c7ab0'
             widget: string
           - hint: 'Original text: en construction 🌱, key: -15803153'
             label: Text

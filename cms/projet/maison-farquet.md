@@ -1,15 +1,16 @@
 ---
 f_highlight: false
-f_numero-2: '06'
+f_numero-2: '05'
 title: Maison Farquet
 f_description-du-projet: >-
-  Description d'un petit paragraphe de l'image. Lorem ipsum dolor sit amet,
-  consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-  dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-  ullamco laboris nisi ut aliquip ex ea commodo consequat.
-f_03-projet-titre: Autoconstruction
-f_02-projet-titre: Concept énergétique
-f_01-projet-titre: Construction
+  Lorsque Marie et sa famille décident de reprendre la maison familiale, deux
+  exigences sont exprimées. La première est celle d’un bâtiment peu gourmand en
+  énergie. La deuxième, de ne pas ressembler à la maison de son enfance.
+  L’extérieur a été isolé avec des panneaux Multipor enduits d’une peinture
+  minérale.
+f_03-projet-titre: Transformation
+f_02-projet-titre: Concept énergétique, CECB
+f_01-projet-titre: Transformation
 slug: maison-farquet
 f_image-phare-du-projet:
   url: >-
@@ -28,16 +29,22 @@ f_images:
 f_autres-projets-3:
   - cms/projet/maison-bianco.md
   - cms/projet/maison-la-koutou.md
-updated-on: '2023-04-28T09:55:37.812Z'
+updated-on: '2023-09-21T11:52:24.714Z'
 created-on: '2023-04-25T13:47:32.135Z'
-published-on: '2023-04-28T09:57:16.307Z'
-f_02-projet-info-rich-text: >-
-  Solaire thermique pour eau chaude sanitaire et chauffage, appoint poêle hydrau
-  à bûches et toilettes sèches à compostage
-f_03-projet-info-rich-text: Autoconstruction en petites bottes de paille de la région
+published-on: '2023-09-21T11:54:49.113Z'
+f_02-projet-info-rich-text: |-
+  Solaire thermique pour eau chaude sanitaire et chauffage  
+  Chaudière à pellets
+
+  ‍
+f_03-projet-info-rich-text: >-
+  Transformation et amélioration énergétique du bâtiment. Isolation périphérique
+  Multipor et crépi minéral. Crépi à la chaux à l’intérieur
 layout: '[projet].html'
 tags: projet
 ---
 
-Savièse  
-2016
+Erde  
+2021
+
+‍

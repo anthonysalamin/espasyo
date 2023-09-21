@@ -5,15 +5,16 @@ f_image-phare-du-projet:
     https://uploads-ssl.webflow.com/6411b33a83bdc1e072b34811/6447d50be07a0ad9b4e7967a_DSC04991.jpg
   alt: null
 slug: maison-bianco
-updated-on: '2023-04-28T09:55:03.927Z'
+updated-on: '2023-09-21T11:51:15.402Z'
 created-on: '2023-04-20T12:58:47.658Z'
-published-on: '2023-04-28T09:57:16.307Z'
-f_numero-2: '02'
+published-on: '2023-09-21T11:54:49.113Z'
+f_numero-2: '04'
 f_description-du-projet: >-
-  Description d'un petit paragraphe de l'image. Lorem ipsum dolor sit amet,
-  consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-  dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-  ullamco laboris nisi ut aliquip ex ea commodo consequat.
+  Cette maison d’architecte construite en 1990 a dû être repensée pour en faire
+  deux appartements. La grande qualité du plan architectural originel a permis
+  d’y intégrer facilement une cage d’escalier commune, tout en préservant et
+  respectant la disposition générale. Une annexe côté jardin vient prolonger
+  l’espace de vie du rez-de-chaussée, offrant à l’étage une terrasse généreuse.
 f_highlight: true
 f_images:
   - url: >-
@@ -46,16 +47,16 @@ f_images:
 f_autres-projets-3:
   - cms/projet/maison-besson.md
   - cms/projet/maison-la-koutou.md
-f_01-projet-titre: Construction
-f_02-projet-titre: Concept énergétique
-f_03-projet-titre: Autoconstruction
-f_02-projet-info-rich-text: >-
-  Solaire thermique pour eau chaude sanitaire et chauffage, appoint poêle hydrau
-  à bûches et toilettes sèches à compostage
-f_03-projet-info-rich-text: Autoconstruction en petites bottes de paille de la région
+f_01-projet-titre: Agrandissement et transformation
+f_02-projet-titre: Normes
+f_03-projet-titre: Étages
+f_02-projet-info-rich-text: Normes selon standard actuel
+f_03-projet-info-rich-text: Diviser les étages pour accueillir deux foyers à la place d’un seul.
 layout: '[projet].html'
 tags: projet
 ---
 
-Savièse  
-2016
+Erde  
+2020
+
+‍

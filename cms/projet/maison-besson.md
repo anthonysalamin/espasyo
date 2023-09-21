@@ -5,15 +5,17 @@ f_image-phare-du-projet:
   url: >-
     https://uploads-ssl.webflow.com/6411b33a83bdc1e072b34811/64413715f97fae6c3a7cf591_DSC_1233-img-phare.jpg
   alt: null
-updated-on: '2023-04-28T09:55:13.736Z'
+updated-on: '2023-09-21T11:48:47.054Z'
 created-on: '2023-04-20T12:59:13.344Z'
-published-on: '2023-04-28T09:57:16.307Z'
-f_numero-2: '03'
+published-on: '2023-09-21T11:54:49.113Z'
+f_numero-2: '02'
 f_description-du-projet: >-
-  Description d'un petit paragraphe de l'image. Lorem ipsum dolor sit amet,
-  consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-  dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-  ullamco laboris nisi ut aliquip ex ea commodo consequat.
+  Cette maison restée dans la famille depuis sa construction en 1789 a subi un
+  agrandissement en 1974. Deux volumes, l’un en pierre, l’autre en brique
+  ciment, se partagent symétriquement l’espace. Le maître d’ouvrage a souhaité
+  ouvrir les espaces et isoler le bâtiment par l’extérieur. À l’intérieur, la
+  lecture des 2 espaces est toujours possible grâce à la restauration des murs
+  en pierre.
 f_highlight: true
 f_images:
   - url: >-
@@ -37,16 +39,21 @@ f_images:
 f_autres-projets-3:
   - cms/projet/maison-la-koutou.md
   - cms/projet/maison-bianco.md
-f_01-projet-titre: Construction
-f_02-projet-titre: Concept énergétique
-f_03-projet-titre: Autoconstruction
-f_02-projet-info-rich-text: >-
-  Solaire thermique pour eau chaude sanitaire et chauffage, appoint poêle hydrau
-  à bûches et toilettes sèches à compostage
-f_03-projet-info-rich-text: Autoconstruction en petites bottes de paille de la région
+f_01-projet-titre: Transformation
+f_02-projet-titre: Concept énergétique, CECB B-A
+f_03-projet-titre: Tansformation
+f_02-projet-info-rich-text: |-
+  Solaire thermique pour eau chaude sanitaire et chauffage  
+  Appoint cuisinière à bois  
+  Toilettes sèches à compostage
+
+  ‍
+f_03-projet-info-rich-text: >-
+  Tansformation d’une maison de 1789 agrandie dans les années ’60. A
+  l’intérieur, lecture du volume originel en pierre
 layout: '[projet].html'
 tags: projet
 ---
 
-Savièse  
-2016
+Champlan  
+2018

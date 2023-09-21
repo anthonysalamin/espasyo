@@ -270,7 +270,7 @@ a:focus,button:focus,input:focus,textarea:focus{outline:0!important}a{-webkit-to
   </div>
   <div class="section slider">
     <div class="container slider projects">
-      <p class="title margin-bottom">{{ texts.-1e76c072 }}<br>{{ texts.-3af3777f }}</p>
+      <p class="title margin-bottom">{{ texts.-83ac7fa }}</p>
       {%- assign setItems = f_images -%}<div class="collection-list-wrapper-slider w-dyn-list">
         {%- unless setItems.length == 0 -%}<div role="list" class="images w-dyn-items">
           {%- for setItem in setItems -%}<div role="listitem" class="image-wrap w-dyn-item">
@@ -309,7 +309,7 @@ a:focus,button:focus,input:focus,textarea:focus{outline:0!important}a{-webkit-to
       {%- assign projetOfProjet = f_autres-projets-3 | resolveMultiReferences | limit: 2 -%}<div class="collection-list-wrapper-similar-projets w-dyn-list">
         {%- unless projetOfProjet.length == 0 -%}<div role="list" class="collection-list-2 w-dyn-items">
           {%- for item in projetOfProjet -%}<div role="listitem" class="w-dyn-item">
-            <a href="{{ item.url }}" class="wrap-im-other-project w-inline-block"><img loading="lazy" data-sizes="[{&quot;max&quot;:767,&quot;size&quot;:&quot;42vw&quot;},{&quot;max&quot;:1439,&quot;size&quot;:&quot;41vw&quot;},{&quot;max&quot;:10000,&quot;size&quot;:&quot;592px&quot;}]" src="{{ item.data.f_image-phare-du-projet.url }}" alt="{{ item.data.title }}" class="thumbnail"></a>
+            <a href="{{ item.url }}" class="wrap-im-other-project w-inline-block"><img alt="{{ item.data.title }}" loading="lazy" data-sizes="[{&quot;max&quot;:767,&quot;size&quot;:&quot;42vw&quot;},{&quot;max&quot;:1439,&quot;size&quot;:&quot;41vw&quot;},{&quot;max&quot;:10000,&quot;size&quot;:&quot;592px&quot;}]" src="{{ item.data.f_image-phare-du-projet.url }}" class="thumbnail"></a>
           </div>{%- endfor -%}
         </div>{%- endunless -%}
         {%- if projetOfProjet.length == 0 -%}<div class="w-dyn-empty">

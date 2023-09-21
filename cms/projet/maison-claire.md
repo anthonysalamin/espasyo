@@ -1,14 +1,16 @@
 ---
 f_highlight: false
-f_numero-2: '04'
+f_numero-2: '07'
 title: Maison Claire
 f_description-du-projet: >-
-  Description d'un petit paragraphe de l'image. Lorem ipsum dolor sit amet,
-  consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-  dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-  ullamco laboris nisi ut aliquip ex ea commodo consequat.
-f_03-projet-titre: Autoconstruction
-f_02-projet-titre: Concept énergétique
+  Pensée dès le départ avec la nécessité d’être évolutive, cette maison du
+  village d’Arbaz accueille deux appartements, tandis qu’un troisième pourra
+  être aménagé dans les combles une fois les enfants partis. Orientée plein sud,
+  la construction en modules préfabriqués de paille porteuse est chauffée
+  uniquement par de petits poêles à bois disposés dans chaque appartement. Les
+  enduits de terre apportent une ambiance chaleureuse à l’ensemble.
+f_03-projet-titre: Construction
+f_02-projet-titre: Concept énergétique, CECB A-A
 f_01-projet-titre: Construction
 f_image-phare-du-projet:
   url: >-
@@ -25,16 +27,25 @@ f_images:
 f_autres-projets-3:
   - cms/projet/maison-bianco.md
   - cms/projet/maison-la-koutou.md
-updated-on: '2023-04-28T09:55:47.465Z'
+updated-on: '2023-09-21T11:54:36.176Z'
 created-on: '2023-04-25T13:50:06.603Z'
-published-on: '2023-04-28T09:57:16.307Z'
-f_02-projet-info-rich-text: >-
-  Solaire thermique pour eau chaude sanitaire et chauffage, appoint poêle hydrau
-  à bûches et toilettes sèches à compostage
-f_03-projet-info-rich-text: Autoconstruction en petites bottes de paille de la région
+published-on: '2023-09-21T11:54:49.113Z'
+f_02-projet-info-rich-text: |-
+  Solaire thermique pour eau chaude sanitaire et chauffage£  
+  Appoint poêle hydrau à bûches  
+  Solaire photovoltaïque  
+  Cuve 10’000l récupération eaux pluie  
+  Toilettes sèches à lombri-compostage
+
+  ‍
+f_03-projet-info-rich-text: >-
+  Construction en paille avec le système préfabriqué Ecococon. 1 maison 2
+  appartements avec la possibilité d’en créer un 3ème
 layout: '[projet].html'
 tags: projet
 ---
 
-Savièse  
-2016
+Arbaz  
+2023
+
+‍

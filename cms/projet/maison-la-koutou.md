@@ -1,19 +1,21 @@
 ---
 title: Maison la Koutou
 slug: maison-la-koutou
-updated-on: '2023-04-28T09:54:43.878Z'
+updated-on: '2023-09-21T11:47:14.761Z'
 created-on: '2023-04-20T12:56:30.562Z'
-published-on: '2023-04-28T09:57:16.307Z'
+published-on: '2023-09-21T11:54:49.113Z'
 f_image-phare-du-projet:
   url: >-
     https://uploads-ssl.webflow.com/6411b33a83bdc1e072b34811/6447dfdee9b33dde73590cb1_HAB3_NF_Mercredi_17_avril_2019-P24-25-Avez-vou-vu-Habiter.jpg
   alt: null
 f_numero-2: '01'
 f_description-du-projet: >-
-  Description d'un petit paragraphe de l'image. Lorem ipsum dolor sit amet,
-  consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-  dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-  ullamco laboris nisi ut aliquip ex ea commodo consequat.
+  Point de départ de notre aventure d’architecte et de bâtisseur, cette maison a
+  été construite en petites bottes de paille autour d’une structure porteuse en
+  bois. Le soleil omniprésent lui permet une quasi autonomie en chauffage et en
+  eau chaude. À l’intérieur comme à l’extérieur, les murs périphériques ont été
+  enduits avec de la chaux mélangée à la terre d’excavation patiemment tamisée.
+  Un bien-être absolu !
 f_highlight: true
 f_images:
   - url: >-

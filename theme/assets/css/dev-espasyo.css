@@ -862,7 +862,7 @@
   background-color: #fff;
   justify-content: center;
   align-items: center;
-  display: flex;
+  display: none;
   position: fixed;
   top: 0%;
   bottom: 0%;

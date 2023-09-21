@@ -332,7 +332,7 @@ a:focus,button:focus,input:focus,textarea:focus{outline:0!important}a{-webkit-to
       {%- assign collection = collections.projet | sort: "f_numero-2" -%}<div class="collection-list-wrapper-slider w-dyn-list">
         {%- unless collection.length == 0 -%}<div role="list" class="images w-dyn-items">
           {%- for item in collection -%}<div role="listitem" class="w-dyn-item">
-            <a href="{{ item.url }}" class="image-block w-inline-block"><img loading="lazy" data-sizes="[{&quot;max&quot;:767,&quot;size&quot;:&quot;87vw&quot;},{&quot;max&quot;:1439,&quot;size&quot;:&quot;84vw&quot;},{&quot;max&quot;:10000,&quot;size&quot;:&quot;1200px&quot;}]" src="{{ item.data.f_image-phare-du-projet.url }}" alt="{{ item.data.title }}" class="img"></a>
+            <a href="{{ item.url }}" class="image-block w-inline-block"><img alt="{{ item.data.title }}" loading="lazy" data-sizes="[{&quot;max&quot;:767,&quot;size&quot;:&quot;87vw&quot;},{&quot;max&quot;:1439,&quot;size&quot;:&quot;84vw&quot;},{&quot;max&quot;:10000,&quot;size&quot;:&quot;1200px&quot;}]" src="{{ item.data.f_image-phare-du-projet.url }}" class="img"></a>
             <div class="info-wrap">
               <div>{{ item.data.f_numero-2 }}</div>
               <div class="wrap-title">
