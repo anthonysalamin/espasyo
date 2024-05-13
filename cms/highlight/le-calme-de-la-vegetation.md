@@ -16,7 +16,7 @@ f_description: La nature a sa carte à jouer dans le confort de vie. En plus de
   construction en havre de paix.
 layout: "[highlight].html"
 slug: le-calme-de-la-vegetation
-f_title: Le calme de la végetation
+f_title: Le calme de la végétation
 tags: highlight
 date: 2024-05-13T17:51:15.244Z
 ---
