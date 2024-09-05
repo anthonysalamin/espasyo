@@ -42,7 +42,7 @@ f_02-projet-info-rich-text: Normes selon standard actuel
 f_03-projet-titre: Étages
 layout: "[projet].html"
 slug: maison-bianco
-f_03-projet-info-rich-text: Diviser les étages pour accueillir deux foyers à la place d’un seul.
+f_03-projet-info-rich-text: Diviser les étages pour accueillir deux foyers à la place d’un seul
 tags: projet
 date: 2024-09-05T18:43:48.639Z
 ---
