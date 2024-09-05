@@ -18,5 +18,5 @@ layout: "[highlight].html"
 slug: materiaux-biosources-un-choix-naturel
 f_title: "Matériaux biosourcés: un-choix-naturel"
 tags: highlight
-date: 2024-05-13T17:47:02.218Z
+date: 2024-09-05T18:35:26.098Z
 ---
