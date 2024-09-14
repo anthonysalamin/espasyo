@@ -1,5 +1,5 @@
 ---
-title: "Matériaux biosourcés: un-choix-naturel"
+title: "Matériaux biosourcés: un choix naturel"
 created-on: 2023-03-15T12:00:03.807Z
 updated-on: 2023-04-25T13:57:30.299Z
 published-on: 2023-04-25T13:58:56.707Z
